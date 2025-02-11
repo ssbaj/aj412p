@@ -1,4 +1,4 @@
-\name{olsNW}
+\name{olsNW} 
 \alias{olsNW}
 \title{Newey-West Standard Error}
 \usage{
@@ -10,7 +10,7 @@ Newey-West Standard Error
 \examples{
 
 optimalLags <- (nrow(Adata))^(1/4)
-olsNW(Adata, "Á¾¼Óº¯¼ö", c("ones", "µ¶¸³º¯¼ö"), optimalLags)
+olsNW(Adata, "ì¢…ì†ë³€ìˆ˜", c("ones", "ë…ë¦½ë³€ìˆ˜"), optimalLags)
 
 library(sandwich)
 cannedNW <- NeweyWest(wheatModel, lag = optimalLags, prewhite = FALSE, sandwich = TRUE)
